@@ -1,5 +1,5 @@
-import finalProjectSprin4.ScooterMainPage;
-import finalProjectSprin4.ScooterOrderPage;
+import ru.praktikum.services.scooter.qa.pages.ScooterMainPage;
+import ru.praktikum.services.scooter.qa.pages.ScooterOrderPage;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

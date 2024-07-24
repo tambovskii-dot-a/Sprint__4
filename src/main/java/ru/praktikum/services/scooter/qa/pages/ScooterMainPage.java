@@ -1,4 +1,4 @@
-package finalProjectSprin4;
+package ru.praktikum.services.scooter.qa.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
