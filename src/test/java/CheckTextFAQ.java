@@ -1,11 +1,11 @@
-import finalProjectSprin4.ScooterMainPage;
 import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
+import ru.praktikum.services.scooter.qa.pages.ScooterMainPage;
+import java.time.Duration;
 import static org.junit.Assert.assertEquals;
 
 
@@ -35,6 +35,7 @@ public class CheckTextFAQ {
     @Parameterized.Parameters
     public static Object[][] getOrderData() {
         driver = new ChromeDriver();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
         ScooterMainPage objScooterMainPage = new ScooterMainPage(driver);
         objScooterMainPage.open(objScooterMainPage.URL);
         return new Object[][]{
