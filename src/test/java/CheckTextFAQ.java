@@ -55,6 +55,7 @@ public class CheckTextFAQ {
         driver.quit();
     }
 
+
     @Test
     public void checkTextFAQ() {
         assertEquals(expectedText, actualText);
