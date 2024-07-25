@@ -45,18 +45,6 @@ public class Order extends BaseTest{
         };
     }
 
-    @Before
-    public void setUp() {
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-    }
-
-    @After
-    public void tearDown() {
-        if (driver != null) {
-            driver.quit();
-        }
-    }
 
     @Test
     public void TestOrderHeadButton() {
