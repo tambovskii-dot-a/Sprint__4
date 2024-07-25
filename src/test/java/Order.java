@@ -10,7 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 @RunWith(Parameterized.class)
-public class Order {
+public class Order extends BaseTest{
 
     private static WebDriver driver;
     private final String firstName;
