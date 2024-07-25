@@ -69,8 +69,6 @@ public class ScooterOrderPage {
         driver.findElement(phoneNumberField).click();
         driver.findElement(phoneNumberField).sendKeys(phoneNumber);
         driver.findElement(nextStepButton).click();
-        new WebDriverWait(driver, Duration.ofSeconds(3))
-                .until(ExpectedConditions.visibilityOfElementLocated(aboutRentSection));
         driver.findElement(datePickerField).click();
         driver.findElement(datePickerField).sendKeys(date);
         driver.findElement(datePickerDayButton).click();
@@ -80,10 +78,7 @@ public class ScooterOrderPage {
         driver.findElement(commentField).click();
         driver.findElement(commentField).sendKeys(comment);
         driver.findElement(orderButton).click();
-        new WebDriverWait(driver, Duration.ofSeconds(3))
-                .until(ExpectedConditions.visibilityOfElementLocated(modalOrderAccept));
         driver.findElement(modalOrderAcceptButton).click();
-        new WebDriverWait(driver, Duration.ofSeconds(3))
-                .until(ExpectedConditions.visibilityOfElementLocated(modalOrderIsOk));
+        driver.findElement(modalOrderIsOk).isDisplayed();
     }
 }
